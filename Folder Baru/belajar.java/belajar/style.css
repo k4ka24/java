@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Menghindari scrollbar */
+    background-color: #87CEEB; /* Warna langit */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Mengisi seluruh tinggi viewport */
+}
+
+.car {
+    position: absolute;
+    width: 100px; /* Lebar mobil */
+    height: 50px; /* Tinggi mobil */
+    background-color: red; /* Warna mobil */
+    border-radius: 10px; /* Sudut mobil yang membulat */
+    animation: moveCar 5s linear infinite; /* Animasi bergerak */
+}
+
+@keyframes moveCar {
+    0% {
+        left: -100px; /* Mulai dari luar layar di kiri */
+    }
+    100% {
+        left: 100%; /* Bergerak ke luar layar di kanan */
+    }
+}
